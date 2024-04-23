@@ -6,21 +6,21 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "Fitur",
     path: "#",
     children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
+      { title: "Neraca Pangan", path: "/" },
+      { title: "Panel Harga", path: "#" },
+      { title: "Ketahanan Pangan (FSVA)", path: "#" },
+      { title: "Statistik", path: "/404" },
     ],
   },
   {
-    title: "Pricing",
+    title: "Integrasi",
     path: "/pricing",
   },
   {
-    title: "About",
+    title: "Tentang",
     path: "/about",
   },
   {
@@ -28,14 +28,15 @@ const menuitems = [
     path: "/blog",
   },
   {
-    title: "Contact",
+    title: "Hubungi Kami",
     path: "/contact",
   },
   {
-    title: "Pro Version",
+    title: "Coba Gratis",
     badge: true,
-    path: "https://astroship-pro.web3templates.com/",
-  },
+    path: "https://jeremyperwira.vercel.app/",
+  }
+  ,
 ];
 ---
 
@@ -44,8 +45,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
+          ><span class="font-bold text-slate-800">Pasar</span><span
+            class="text-slate-500">Ku</span
           >
         </a>
         <div class="block lg:hidden">
@@ -72,8 +73,8 @@ const menuitems = [
                       class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
                       <span> {item.title}</span>
                       {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                          New
+                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-lime-700 rounded-full">
+                          Baru
                         </span>
                       )}
                     </a>
@@ -84,8 +85,8 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
+          <Link href="https://jeremyperwira.vercel.app/" style="muted" block size="md">Log in</Link>
+          <Link href="https://jeremyperwira.vercel.app/" size="md" block>Sign up</Link>
         </div>
       </MenuItems>
     </Astronav>
