@@ -17,6 +17,7 @@ const menuitems = [
   },
   {
     title: "Integrasi",
+    badge1: true,
     path: "/pricing",
   },
   {
@@ -33,7 +34,7 @@ const menuitems = [
   },
   {
     title: "Coba Gratis",
-    badge: true,
+    badge2: true,
     path: "https://jeremyperwira.vercel.app/",
   }
   ,
@@ -72,10 +73,19 @@ const menuitems = [
                       href={item.path}
                       class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
                       <span> {item.title}</span>
-                      {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-lime-700 rounded-full">
+                      {item.badge1 && (
+                        <span class="ml-1 px-2 py-0.5 text-[8px] animate-pulse font-semibold uppercase text-white bg-purple-500 rounded-full">
+                          Promo
+                        </span>
+                        // 
+                        
+                      )}
+                      {item.badge2 && (
+                        <span class="ml-1 px-2 py-0.5 text-[8px] animate-pulse font-semibold uppercase text-white bg-orange-500 rounded-full">
                           Baru
                         </span>
+                        // 
+                        
                       )}
                     </a>
                   </li>
